@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Customed by Steam520
+/app
