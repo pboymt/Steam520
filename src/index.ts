@@ -1,11 +1,11 @@
 import Axios, { AxiosError } from 'axios';
 import axiosRetry from 'axios-retry';
-import { writeFile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import { setTimeout } from 'timers/promises';
 import { PREFIX_IPADDRESS, DomainList, REGEX_IP } from './constants';
 import { generateHosts } from './hosts';
 import { HostsRaw } from './interfaces';
-import { makeIPAddressURL, mostCommon } from './utils';
+import { makeIPAddressURL, mostCommon, renderTemplate } from './utils';
 
 (async () => {
 
@@ -44,8 +44,15 @@ import { makeIPAddressURL, mostCommon } from './utils';
         }
     }
 
-    await writeFile('./hosts', generateHosts(hosts));
+    const hosts_str = generateHosts(hosts);
+
+    await writeFile('./hosts', hosts_str);
     await writeFile('./hosts.json', JSON.stringify(hosts));
+
+    const readme_str = await readFile('./README.template.md', 'utf8');
+    await writeFile('./README.md', renderTemplate(readme_str, {
+        hosts: hosts_str
+    }));
 
 })();
 
