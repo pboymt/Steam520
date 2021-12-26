@@ -1,0 +1,29 @@
+{
+  "name": "steam520",
+  "version": "1.0.0",
+  "description": "启发自GitHub520，由TypeScript编写、Node.js 16+驱动，提供Steam遭到类似Github被干扰的解决方案。（无需安装）",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pboymt/Steam520.git"
+  },
+  "keywords": [],
+  "author": "pboymt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pboymt/Steam520/issues"
+  },
+  "homepage": "https://github.com/pboymt/Steam520#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "axios-retry": "^3.2.4"
+  }
+}
