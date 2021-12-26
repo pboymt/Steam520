@@ -2,10 +2,11 @@
   "name": "steam520",
   "version": "1.0.0",
   "description": "启发自GitHub520，由TypeScript编写、Node.js 16+驱动，提供Steam遭到类似Github被干扰的解决方案。（无需安装）",
-  "main": "index.js",
+  "main": "app/index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "update": "node app"
   },
   "repository": {
     "type": "git",
