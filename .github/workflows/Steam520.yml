@@ -26,8 +26,33 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm run update
-    - run: cat hosts
-    - run: cat hosts.json
+    - name: Install dependencies
+      run: npm ci
+    - name: Build
+      run: npm run build --if-present
+    - name: Update hosts
+      run: npm run update
+    - name: Setup timezone
+      uses: zcong1993/setup-timezone@master
+      with:
+        timezone: Asia/Shanghai
+    - name: Get current time
+      uses: 1466587594/get-current-time@v2
+      id: current-time
+      with:
+        format: YYYY-MM-DD HH:mm:ss
+    - name: Commit changes
+      id: commit
+      run: |
+        git config --global user.email "10893582+pboymt@users.noreply.github.com"
+        git config --global user.name "action_bot"
+        git add .
+        git commit -m "update: Update hosts file at ${{ steps.current-time.output.formattedTime }}"
+      continue-on-error: true
+    - name: Check on failures
+      if: steps.commit.outputs.status == 'failure'
+      run: exit 1
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
