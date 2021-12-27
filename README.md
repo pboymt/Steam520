@@ -35,7 +35,7 @@
 23.33.29.70         cdn.akamai.steamstatic.com
 23.66.66.221        steam-chat.com
 
-# Update time: 2021/12/27 上午6:06:49
+# Update time: 2021/12/27 上午8:29:10
 # Repo URL: https://github.com/pboymt/Steam520
 # Hosts END
 
