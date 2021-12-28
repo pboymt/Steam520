@@ -23,6 +23,9 @@ export const DomainList: IDomainList = {
         "api.steampowered.com",
         "steamcdn-a.akamaihd.net",
         "cdn.akamai.steamstatic.com",
-        "steam-chat.com"
+        "community.akamai.steamstatic.com",
+        "store.akamai.steamstatic.com",
+        "cdn.cloudflare.steamstatic.com",
+        "steam-chat.com",
     ]
 }
