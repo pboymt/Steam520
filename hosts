@@ -3,13 +3,13 @@
 23.79.218.99        www.steamcommunity.com
 104.96.246.161      store.steampowered.com
 104.96.246.161      api.steampowered.com
-44.201.53.72        steamcdn-a.akamaihd.net
-35.153.71.230       cdn.akamai.steamstatic.com
-34.238.220.183      community.akamai.steamstatic.com
-54.90.103.136       store.akamai.steamstatic.com
-3.238.100.111       cdn.cloudflare.steamstatic.com
+3.219.33.211        steamcdn-a.akamaihd.net
+44.212.26.141       cdn.akamai.steamstatic.com
+54.145.129.101      community.akamai.steamstatic.com
+23.20.88.235        store.akamai.steamstatic.com
+3.88.60.195         cdn.cloudflare.steamstatic.com
 23.79.215.149       steam-chat.com
 
-# Update time: 2022/11/25 22:07:48
+# Update time: 2022/11/26 00:10:33
 # Repo URL: https://github.com/pboymt/Steam520
 # Hosts END
