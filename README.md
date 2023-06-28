@@ -34,11 +34,10 @@
                     steamcdn-a.akamaihd.net
                     cdn.akamai.steamstatic.com
                     community.akamai.steamstatic.com
-                    store.akamai.steamstatic.com
                     cdn.cloudflare.steamstatic.com
 104.127.80.173      steam-chat.com
 
-# Update time: 2023/6/29 04:08:53
+# Update time: 2023/6/29 06:08:05
 # Repo URL: https://github.com/pboymt/Steam520
 # Hosts END
 
