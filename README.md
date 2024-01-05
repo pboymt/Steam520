@@ -38,7 +38,7 @@
                     cdn.cloudflare.steamstatic.com
 23.79.56.40         steam-chat.com
 
-# Update time: 2024/1/5 10:21:55
+# Update time: 2024/1/5 12:09:51
 # Repo URL: https://github.com/pboymt/Steam520
 # Hosts END
 
